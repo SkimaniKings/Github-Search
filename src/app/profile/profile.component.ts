@@ -7,8 +7,14 @@ import { ProfileService }from '../profile.service';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
+  profile:any;
 
-  constructor(private profileService:ProfileService) { }
+  constructor(private profileService:ProfileService) { 
+    this.profileService.getProfileInfo().subscribe(profile => {
+      console.log(profile);
+      this.profile = profile;
+    });
+  }
 
   ngOnInit() {
   }
