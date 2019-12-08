@@ -1,5 +1,5 @@
-<h1>Github-Search</h1>
-
+<h1 class="p-5">Github-Search</h1>
+<div class="container">
 <form action="" class="enter">
     <div class="form-group">
         <input type="text" placeholder="enter username here...." class="form-control" [(ngModel)]="username"
@@ -17,7 +17,7 @@
             <ul class="list-group">
                 <li class="list-group-item" *ngIf="profile.bio">{{profile.bio}}</li>
                 <li class="list-group-item" *ngIf="profile.blog">{{profile.blog}}</li>
-                <li class="list-group-item" *ngIf="profile.hireable">{{profile.hireable}}</li>
+              
                 <li class="list-group-item" *ngIf="profile.email">{{profile.email}}</li>
             </ul>
         </div>
@@ -73,4 +73,5 @@
             </div>
 
         </div>
+    </div>
     </div>
