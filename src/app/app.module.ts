@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ProfileService } from './profile.service';
+import { FormsModule }from '@angular/forms';
 import { HttpClientModule }from '@angular/common/http';
 
 @NgModule({
@@ -17,6 +18,8 @@ import { HttpClientModule }from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule
+  
    
   ],
   providers: [ProfileService],

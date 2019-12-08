@@ -1,1 +1,24 @@
 <h1>Github-Search</h1>
+<form action="" class="enter">
+    <div class="form-group">
+        <input type="text" placeholder="enter username here...." class="form-control"  [(ngModel)]="username" name="username" (keyup)="findProfile()">
+    
+    </div>
+</form>
+<div *ngIf="profile">
+    <div class="row">
+        <div class="col-sm-3">
+            <img class="img" src="{{profile.avatar_url}}">
+        </div>
+        <br>
+        <br>
+        <div class="col-sm-3">
+            <ul class="list-group">
+                <li class="list-group-item" *ngIf="profile.bio">{{profile.bio}}</li>
+                <li class="list-group-item" *ngIf="profile.blog">{{profile.blog}}</li>
+                <li class="list-group-item" *ngIf="profile.hireable">{{profile.hireable}}</li>
+                <li class="list-group-item" *ngIf="profile.email">{{profile.email}}</li>
+            </ul>
+        </div>
+    </div>
+</div>
