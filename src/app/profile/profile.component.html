@@ -1,14 +1,13 @@
 <h1>Github-Search</h1>
 <form action="" class="enter">
     <div class="form-group">
-        <input type="text" placeholder="enter username here...." class="form-control"  [(ngModel)]="username" name="username" (keyup)="findProfile()">
-    
+        <input type="text" placeholder="Enter username here...." class="form-control"  [(ngModel)]="username" name="username" (keyup)="getProfileInfo()"> 
     </div>
 </form>
 <div *ngIf="profile">
     <div class="row">
         <div class="col-sm-3">
-            <img class="img" src="{{profile.avatar_url}}">
+            <!-- <img class="img" src="{{profile.avatar_url}}" class="img-fluid" alt="profile"> -->
         </div>
         <br>
         <br>
