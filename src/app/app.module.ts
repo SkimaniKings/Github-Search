@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ProfileService } from './profile.service';
+import { HttpClient,HttpHeaders, HttpClientModule }from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,9 @@ import { ProfileService } from './profile.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+   
   ],
   providers: [ProfileService],
   bootstrap: [AppComponent]
