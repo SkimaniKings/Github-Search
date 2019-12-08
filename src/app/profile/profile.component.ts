@@ -11,22 +11,36 @@ export class ProfileComponent implements OnInit {
   repos:any;
   username:string;
 
-  constructor(private profileService:ProfileService) { 
-    
-    this.profileService.getProfileInfo().subscribe(profile => {
-      console.log(profile);
-      this.profile = profile;
-    });
-  }
-  findProfile(){
-    this.profileService.updateProfile(this.username);
-    this.profileService.getProfileInfo().subscribe(profile => {
-      console.log(profile);
-      this.profile = profile;
-    });
-  }
+constructor(private profileService:ProfileService){
+  this.profileService.updateProfile(this.username);
+  this.profileService.getProfileInfo().subscribe(profile => {
+    console.log(profile);
+    this.profile = profile;
+  });
 
+  this.profileService.getProfileRepos().subscribe(repos => {
+    console.log(repos);
+    this.repos = repos;
+  });
+}
+ 
+findProfile(){
+  this.profileService.updateProfile(this.username);
+  this.profileService.getProfileInfo().subscribe(profile => {
+    console.log(profile);
+    this.profile = profile;
+  });
+
+  this.profileService.getProfileRepos().subscribe(repos => {
+    console.log(repos);
+    this.repos = repos;
+  })
+}
   ngOnInit() {
+    
+    this.profileService.updateProfile('skimanikings');
+    this.profileService.getProfileInfo().subscribe(profile => this.profile = profile);
+    this.profileService.getProfileRepos().subscribe(repos =>  this.repos = repos);
   }
 
 }
