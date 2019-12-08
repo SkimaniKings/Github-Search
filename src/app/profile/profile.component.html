@@ -1,4 +1,5 @@
-<h1 class="p-5">Github-Search</h1>
+
+<h1 class="text-center p-4">Github~<span>Search</span></h1>
 <div class="container">
 <form action="" class="enter">
     <div class="form-group">
@@ -52,13 +53,12 @@
             <h1>Repositories.</h1>
             <div class="row">
                     <div class=" col-sm-10card-columns">
-                        <div class="card" *ngFor="let repos of repos">
+                        <div *ngFor="let repos of repos">
                             <div class="card m-4">
                                 <a href="{{repos.html_url}}" class="text-align-center" target="_blank"
                                     class="view btn btn-outline-info">View this project on github</a>
                                 <br>
                                 <br>
-
                                 <div class=" text-center">
                                     <h2>{{repos.name}}</h2>
                                 </div>
