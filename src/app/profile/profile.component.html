@@ -22,6 +22,7 @@
             </ul>
         </div>
     </div>
+    <div class='row'>
     <div class="col-sm-6">
         <div>
             <hr>
@@ -36,6 +37,7 @@
             </p>
             <hr>
             <hr>
+        </div>
             <ul class="list-group">
                 <li class="list-group-item"><strong>Username: </strong>{{user.login}}</li>
                 <li class="list-group-item"><strong>Location: </strong>{{Location.login}}</li>
@@ -49,27 +51,26 @@
             <hr>
             <h1>Repositories.</h1>
             <div class="row">
-                <div class="col-md-12">
                     <div class=" col-sm-10card-columns">
                         <div class="card" *ngFor="let repos of repos">
-                            <div class="card">
+                            <div class="card m-4">
                                 <a href="{{repos.html_url}}" class="text-align-center" target="_blank"
-                                    class="view btn btn-outline-success">View this project on github</a>
+                                    class="view btn btn-outline-info">View this project on github</a>
                                 <br>
                                 <br>
 
                                 <div class=" text-center">
-                                    <h2 id="rname">{{repos.name}}</h2>
+                                    <h2>{{repos.name}}</h2>
                                 </div>
                                 <div class="card-body">
-                                    <p id="dec">
+                                    <p>
                                         {{repos.description}}
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                
             </div>
 
         </div>
