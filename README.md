@@ -5,12 +5,21 @@
 - This is a github search application that allows users to type in github username and search for the github accounts. It allows one to view the repos and also allows one to view the account directly on github.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.
-## Technologies Used 
+
+## Technologies Used
+
 - HTML 5
 - CSS
 - Bootstrap
 - Angular version 8.2.0
 
+## BDD
+- Run the application on a supported web browser. 
+- On the form type in the username of the person to whom you want to search. 
+- The Github details of the person you will appear. Their repos will also be available.
+- Also present will be information when the repo was created. 
+- To view the repos on github, you will click on the 'view project on github' button and it will direct you to the repo on github.
+- A new tab will open and you will be able to view the repo directly on github.
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
