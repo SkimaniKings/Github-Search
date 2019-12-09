@@ -21,7 +21,6 @@ constructor(private profileService:ProfileService){
     this.repos = repos;
   });
 }
- 
 findProfile(){
   this.profileService.updateProfile(this.username);
   this.profileService.getProfileInfo().subscribe(profile => {
@@ -38,5 +37,4 @@ findProfile(){
     this.profileService.getProfileInfo().subscribe(profile => this.profile = profile);
     this.profileService.getProfileRepos().subscribe(repos =>  this.repos = repos);
   }
-
 }
