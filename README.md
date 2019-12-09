@@ -1,6 +1,15 @@
 # Github-Search
 
+## Description
+
+- This is a github search application that allows users to type in github username and search for the github accounts. It allows one to view the repos and also allows one to view the account directly on github.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.
+## Technologies Used 
+- HTML 5
+- CSS
+- Bootstrap
+- Angular version 8.2.0
 
 ## Development server
 
