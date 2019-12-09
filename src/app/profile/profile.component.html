@@ -1,8 +1,9 @@
-<h1><img src="https://bit.ly/2E1b76l" width="200px"></h1>
+<h1><img src="https://bit.ly/2E1b76l" width="300px"></h1>
+<p class="git">"A search engine for github-accounts. Go ahead and try"</p>
 <div class="container">
     <form action="" class="enter">
         <div class="form-group">
-            <input type="text" placeholder="Search github user name...." class="form-control" [(ngModel)]="username"
+            <input type="text" placeholder="Enter github's username...." class="form-control" [(ngModel)]="username"
                 name="username" (keyup)="findProfile()">
         </div>
     </form>
@@ -46,7 +47,7 @@
                         github</a>
                 </p>
                 <hr>
-                <h1>Repositories.</h1>
+                <h2>Repositories:</h2>
                 <div class="row">
                     <div class=" card-columns">
                         <div *ngFor="let repos of repos">

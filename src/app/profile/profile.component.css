@@ -1,7 +1,12 @@
 h1 {
     text-align: center;
+
 }
 .desc {
     font-family: 'Yeon Sung', cursive;
     font-size:25px;
+}
+.git  {
+    text-align: center;
+    color:lime;
 }
