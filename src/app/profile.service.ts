@@ -9,9 +9,8 @@ import { HttpClient }from '@angular/common/http';
 export class ProfileService {
 
   private username:string;
-  private client_id = " Iv1.9bdef01a58b5e07b";
-  private client_secret = " a6c2b7d8f7c691e771b1908873e1322028e097c4";
-
+  private client_id = " 9bdef01a58b5e07b";
+  private client_secret ="d264742209386e9ad719ea7cd8eb1b4660e09fcb";
   constructor(private http:HttpClient) { 
     this.username = "skimanikings";
   }
