@@ -16,6 +16,12 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - CSS
 - Bootstrap
 - Angular version 8.2.0
+## Setup and installation.
+
+* clone repository at [Github User search](https://github.com/SkimaniKings/Github-Search).
+- Open terminal command line then navigate to the root folder of the application.
+- Run `ng serve` command.
+- Navigate to `http://localhost:4200/` in your browser.
 
 ## BDD
 
