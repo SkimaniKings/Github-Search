@@ -31,8 +31,6 @@
 
                 <span class="label" class="btn btn-info"> {{profile.following}} Following </span>&nbsp;
 
-                <span class="label" class="btn btn-secondary"> {{profile.public_gists}} gists</span>&nbsp;
-
                 <span class="label" class="btn btn-primary"> {{profile.public_repos}} Repositories</span>
             </p>
             <hr>
@@ -59,7 +57,7 @@
                                 <br>
                                 <br>
                                 <div class="card-body">
-                                      <p>{{repos.description}}</p>
+                                      <p class="desc">{{repos.description}}</p>
                                       <p>Created at: {{repos.created_at | date}}</p>
                                 </div>
                                 <a href="{{repos.html_url}}" class="text-align-center" target="_blank"
