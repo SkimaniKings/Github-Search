@@ -9,12 +9,14 @@ import { ProfileService } from './profile.service';
 import { FormsModule }from '@angular/forms';
 import { HttpClientModule }from '@angular/common/http';
 import { DateCountPipe } from './date-count.pipe';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfileComponent,
-    DateCountPipe
+    DateCountPipe,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
